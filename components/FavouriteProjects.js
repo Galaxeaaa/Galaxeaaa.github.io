@@ -44,7 +44,7 @@ export default function FavouriteProjects() {
 								alt="portfolio"
 								className="w-full transform hover:scale-125 transition duration-2000 ease-out"
 							/>
-							<h1 className="absolute top-5 left-5 md:top-10 md:left-10 text-gray-50 font-bold text-base md:text-2xl bg-red-500 rounded-md px-2">
+							<h1 className="absolute top-5 left-5 md:top-10 md:left-10 text-gray-50 font-bold text-base md:text-2xl bg-orange-500 rounded-md px-2">
 								Real-time Subsurface Scattering
 							</h1>
 							<h1 className="absolute bottom-5 left-5 md:bottom-10 md:left-10 text-gray-50 font-bold text-xl">

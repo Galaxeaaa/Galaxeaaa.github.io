@@ -55,14 +55,12 @@ const userData = {
 	],
 	about: {
 		title:
-			"I'm a senior student at Zhejiang University. I am a rendering engine developer intern that loves displaying a realistic world in the virtual space",
+			"I'm a senior student at Zhejiang University.",
 		description: [
-			'Blablabla',
-			'Blablabla',
-			'Blablabla',
+			'I am a researcher and programmer that create useful tools to help people build a realistic world in the virtual space. I am still an undergraduate student majoring in Computer Science and Technology at Zhejiang University, learning and trying to contribute to pushing the boundary of computer graphics.',
+			'Currently I am a rendering engine developer intern at RaysEngine, Hangzhou, Zhejiang, China. Our company is dedicated to cloud rendering engine utilized by game, movie and multimedia industry.',
 		],
-		currentProject: "Real-time Subsurface Scattering",
-		currentProjectUrl: "",
+		interest: "Computer Graphics",
 	},
 	experience: [
 		{

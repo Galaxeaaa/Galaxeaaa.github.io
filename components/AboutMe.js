@@ -12,16 +12,19 @@ export default function AboutMe() {
 			<div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
 				<div className="text-container max-w-6xl mx-auto pt-20">
 					<p
-						className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
-						style={{ lineHeight: "3rem" }}
+						className="leading-normal md:leading-loose text-2xl md:text-4xl font-semibold mx-4"
+					// style={{ lineHeight: "4rem" }}
 					>
-						{userData.about.title}.<br></br>Currently working on{" "}
-						<a
-							className="bg-red-500 rounded-md px-2 py-1 text-white"
-							href={userData.about.currentProjectUrl}
-						>
-							{userData.about.currentProject} ✈️
-						</a>
+						{userData.about.title}<br></br>Interested in{" "}
+						<div className="inline-block hover:scale-110 hover:-rotate-1 duration-200">
+							<a
+								className="bg-orange-500 rounded-md px-2 py-1 text-white"
+							// href={userData.about.currentProjectUrl}
+							>
+								{userData.about.interest} ✈️
+							</a>
+						</div>
+						.
 					</p>
 				</div>
 			</div>
@@ -139,7 +142,7 @@ export default function AboutMe() {
 							</p>
 						))}
 
-						<h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+						{/* <h1 className="bg-orange-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
 							Tech Stack
 						</h1>
 						<div className="flex flex-row flex-wrap mt-8">
@@ -191,7 +194,7 @@ export default function AboutMe() {
 								src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
 								className="h-20 w-20 mx-4 my-4"
 							/>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
