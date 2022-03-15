@@ -19,9 +19,10 @@ export default function Footer() {
 									className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
 									href="https://galaxeaaa.github.io"
 								>
-									Manu Arora {'&'} Cheng Wang
+									Manu Arora
 								</a>
 							</div>
+							{'&'} Cheng Wang
 						</p>
 					</div>
 					<div className="justify-self-end space-x-4 flex flex-row items-center">

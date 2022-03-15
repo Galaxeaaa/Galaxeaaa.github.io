@@ -34,12 +34,12 @@ export default function AboutMe() {
 								Contact
 							</h1>
 							<p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-								For any sort help / enquiry, shoot a{" "}
+								For any sort help / enquiry, shoot an{" "}
 								<a
 									href={`mailto:${userData.email}`}
 									className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
 								>
-									mail
+									e-mail
 								</a>{" "}
 								and I'll get back. I swear.
 							</p>
@@ -66,7 +66,7 @@ export default function AboutMe() {
 							Social Links
 						</h1>
 						<div className="mt-4 ml-4">
-							<div className="flex flex-row justify-start items-center ">
+							{/* <div className="flex flex-row justify-start items-center ">
 								<a
 									href={userData.socialLinks.facebook}
 									className="flex flex-row items-center space-x-4 group"
@@ -89,7 +89,7 @@ export default function AboutMe() {
 										Twitter
 									</p>
 								</a>
-							</div>
+							</div> */}
 							<div className="flex flex-row justify-start items-center">
 								<a
 									href={userData.socialLinks.github}
@@ -102,7 +102,7 @@ export default function AboutMe() {
 									</p>
 								</a>
 							</div>
-							<div className="flex flex-row justify-start items-center">
+							{/* <div className="flex flex-row justify-start items-center">
 								<a
 									href={userData.socialLinks.linkedin}
 									className="flex flex-row items-center space-x-4 group"
@@ -125,7 +125,7 @@ export default function AboutMe() {
 										Instagram
 									</p>
 								</a>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					{/* Text area */}
