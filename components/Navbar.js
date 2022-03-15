@@ -16,7 +16,7 @@ export default function Navbar() {
 
 	return (
 		<div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-			<div className="grid grid-cols-3 md: justify-evenly items-center">
+			<div className="grid grid-cols-2 grid-flow-row md:grid-cols-3 items-center overflow-hidden">
 				{/* Logo / Home / Text */}
 
 				<div className="flex flex-col">
@@ -32,7 +32,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 
-				<div className="space-x-8 hidden justify-self-center md:block">
+				<div className="hidden space-x-8 justify-self-center md:flex">
 					<Link href="/about">
 						<a
 							className={`text-base  ${router.asPath === "/about"
@@ -215,7 +215,7 @@ export default function Navbar() {
 					</button>
 				</div>
 			</div>
-			<div className="space-x-8 block md:hidden mt-4">
+			<div className="flex justify-center space-x-8 md:hidden mt-4">
 				<Link href="/about">
 					<a className="text-base font-normal text-gray-600 dark:text-gray-300">
 						About
@@ -231,11 +231,11 @@ export default function Navbar() {
 						Experience
 					</a>
 				</Link>
-				<Link href="/contact">
+				{/* <Link href="/contact">
 					<a className="text-base font-normal text-gray-600 dark:text-gray-300">
 						Contact
 					</a>
-				</Link>
+				</Link> */}
 			</div>
 		</div>
 	);
