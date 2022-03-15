@@ -1,44 +1,35 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import ContainerBlock from "../components/ContainerBlock";
+import FavouriteProjects from "../components/FavouriteProjects";
+import LatestCode from "../components/LatestCode";
+import Hero from "../components/Hero";
+import getLatestRepos from "@lib/getLatestRepos";
+import userData from "@constants/data";
 
-export async function getStaticProps() {
-	const allPostsData = getSortedPostsData()
-	return {
-		props: {
-			allPostsData
-		}
-	}
-}
-
-export default function Home({ allPostsData }) {
+export default function Home() {
 	return (
-		<Layout home>
-			<Head>
-				<title>{siteTitle}</title>
-			</Head>
-			<section className={utilStyles.headingMd}>
-				<p>I am a senior student at Zhejiang University...</p>
-			</section>
-			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>Blog</h2>
-				<ul className={utilStyles.list}>
-					{allPostsData.map(({ id, date, title }) => (
-						<li className={utilStyles.listItem} key={id}>
-							<Link href={`/posts/${id}`}>
-								<a>{title}</a>
-							</Link>
-							<br />
-							<small className={utilStyles.lightText}>
-								<Date dateString={date} />
-							</small>
-						</li>
-					))}
-				</ul>
-			</section>
-		</Layout>
-	)
+		<ContainerBlock
+			title="Manu Arora - Developer, Writer, Creator"
+			description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+		>
+			<Hero />
+			<FavouriteProjects />
+			{/* <LatestCode repositories={repositories} /> */}
+		</ContainerBlock>
+	);
 }
+
+// export const getServerSideProps = async () => {
+// 	console.log(process.env.GITHUB_AUTH_TOKEN);
+// 	let token = process.env.GITHUB_AUTH_TOKEN;
+
+// 	const repositories = await getLatestRepos(userData, token);
+// 	// console.log("REPOSITORIES", repositories);
+
+// 	return {
+// 		props: {
+// 			repositories,
+// 		},
+// 	};
+// };
