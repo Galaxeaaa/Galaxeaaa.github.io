@@ -16,7 +16,7 @@ export default function Navbar() {
 
 	return (
 		<div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-			<div className="flex  md:flex-row justify-between items-center">
+			<div className="grid grid-cols-3 md: justify-evenly items-center">
 				{/* Logo / Home / Text */}
 
 				<div className="flex flex-col">
@@ -32,7 +32,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 
-				<div className="space-x-8 hidden md:block">
+				<div className="space-x-8 hidden justify-self-center md:block">
 					<Link href="/about">
 						<a
 							className={`text-base  ${router.asPath === "/about"
@@ -135,7 +135,7 @@ export default function Navbar() {
 					</Link> */}
 				</div>
 
-				<div className="space-x-4 flex flex-row items-center">
+				<div className="space-x-4 justify-self-end flex flex-row items-center">
 					{/* <a
 						href={userData.socialLinks.instagram}
 						className="text-base font-normal text-gray-600 dark:text-gray-300"
