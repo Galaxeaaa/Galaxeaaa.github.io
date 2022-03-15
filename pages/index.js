@@ -10,8 +10,8 @@ import userData from "@constants/data";
 export default function Home() {
 	return (
 		<ContainerBlock
-			title="Manu Arora - Developer, Writer, Creator"
-			description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+			title="Cheng Wang"
+			description="I've been developing websites for 5 years straight. Get in touch with me to know more."
 		>
 			<Hero />
 			<FavouriteProjects />
