@@ -10,7 +10,7 @@ const userData = {
 		{
 			title: "Real-time Subsurface Scattering",
 			link: "https://github.com/Galaxeaaa/burley-ss",
-			imgUrl: "/tmk.jpg",
+			imgUrl: "/subsurface-scattering.webp",
 		},
 		// {
 		//   title: "Tailwind Master Kit",
@@ -62,14 +62,14 @@ const userData = {
 			'Blablabla',
 		],
 		currentProject: "Real-time Subsurface Scattering",
-		currentProjectUrl: "https://github.com/Galaxeaaa/burley-ss",
+		currentProjectUrl: "",
 	},
 	experience: [
 		{
 			title: "Rendering Engine Developer Intern",
 			company: "RaysEngine",
 			year: "2021-2022",
-			companyLink: "https://mroads.com",
+			companyLink: "",
 			desc: "Contributed to subsurface scattering rendering in our engine.",
 		},
 		{
@@ -88,12 +88,12 @@ const userData = {
 		},
 	],
 	resumeUrl:
-		"https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+		"https://drive.google.com/file/d/1x4ncyIihsWEQ8ulOtN-FEaBSYiNhwDYU/view?usp=sharing",
 	socialLinks: {
 		// instagram: "https://instagram.com/maninthere",
 		// twitter: "https://twitter.com/mannupaaji",
 		// linkedin: "https://linkedin.com/in/manuarora28",
-		github: "https://github.com/manuarora700",
+		github: "https://github.com/Galaxeaaa",
 		// facebook: "https://facebook.com/",
 	},
 };
