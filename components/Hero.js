@@ -9,25 +9,25 @@ export default function Hero() {
 		<div className="flex flex-row justify-center max-w-6xl mx-auto">
 			{/* Text container */}
 
-			<div className="max-w-md lg:w-2/3 mx-auto text-center lg:text-left">
+			<div className="max-w-md mx-auto text-center lg:text-left">
 				<RoughNotationGroup show={true}>
 					<RainbowHighlight color={colors[0]}>
-						<h1 className="text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+						<h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
 							Developer.
 						</h1>
 					</RainbowHighlight>
 					<RainbowHighlight color={colors[1]}>
-						<h1 className="text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+						<h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
 							Designer.
 						</h1>
 					</RainbowHighlight>
 					<RainbowHighlight color={colors[2]}>
-						<h1 className="text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+						<h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
 							Programmer.
 						</h1>
 					</RainbowHighlight>
 					<RainbowHighlight color={colors[3]}>
-						<h1 className="text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+						<h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
 							Researcher.
 						</h1>
 					</RainbowHighlight>

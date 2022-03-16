@@ -32,28 +32,29 @@ export default function FavouriteProjects() {
 				</header>
 
 				{/* Grid starts here */}
-				<div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
-					{/* Single card */}
-					<a
-						href=""
-						className="w-full block col-span-3 shadow-2xl"
-					>
-						<div className="relative overflow-hidden">
-							<img
-								src="/subsurface-scattering.webp"
-								alt="portfolio"
-								className="w-full transform hover:scale-125 transition duration-2000 ease-out"
-							/>
-							<h1 className="absolute top-5 left-5 md:top-10 md:left-10 text-gray-50 font-bold text-base md:text-2xl bg-orange-500 rounded-md px-2">
-								Real-time Subsurface Scattering
-							</h1>
-							<h1 className="absolute bottom-5 left-5 md:bottom-10 md:left-10 text-gray-50 font-bold text-xl">
-								01
-							</h1>
-						</div>
-					</a>
-					{/* Single card */}
-					{/* <a
+				<div className="mx-auto px-10">
+					<div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40 mx-auto">
+						{/* Single card */}
+						<a
+							href=""
+							className="w-full block col-span-3 shadow-2xl"
+						>
+							<div className="relative overflow-hidden">
+								<img
+									src="/subsurface-scattering.webp"
+									alt="portfolio"
+									className="w-full transform hover:scale-125 transition duration-2000 ease-out"
+								/>
+								<h1 className="absolute top-5 left-5 md:top-10 md:left-10 text-gray-50 font-bold text-base md:text-2xl bg-orange-500 rounded-md px-2">
+									Real-time Subsurface Scattering
+								</h1>
+								<h1 className="absolute bottom-5 left-5 md:bottom-10 md:left-10 text-gray-50 font-bold text-xl">
+									01
+								</h1>
+							</div>
+						</a>
+						{/* Single card */}
+						{/* <a
 						href="https://placeholdertech.in"
 						className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
 					>
@@ -71,8 +72,8 @@ export default function FavouriteProjects() {
 							</h1>
 						</div>
 					</a> */}
-					{/* Single card */}
-					{/* <a
+						{/* Single card */}
+						{/* <a
 						href="https://manuarora.in"
 						className="w-full block col-span-3 sm:col-span-1  object-cover"
 					>
@@ -90,6 +91,7 @@ export default function FavouriteProjects() {
 							</h1>
 						</div>
 					</a> */}
+					</div>
 				</div>
 			</div>
 		</div>

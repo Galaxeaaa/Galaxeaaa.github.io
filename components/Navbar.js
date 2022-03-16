@@ -15,7 +15,7 @@ export default function Navbar() {
 	}, []);
 
 	return (
-		<div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+		<div className="max-w-6xl mx-auto px-10 py-10 md:py-20">
 			<div className="grid grid-cols-2 grid-flow-row md:grid-cols-3 items-center overflow-hidden">
 				{/* Logo / Home / Text */}
 
