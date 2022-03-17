@@ -37,20 +37,24 @@ export default function FavouriteProjects() {
 						{/* Single card */}
 						<a
 							href=""
-							className="w-full block col-span-3 shadow-2xl"
+							className="w-full block col-span-3 shadow-2xl aspect-[5/2]"
 						>
-							<div className="relative overflow-hidden">
+							<div className="relative overflow-clip w-full h-full text-md sm:text-lg md:text-2xl">
 								<img
 									src="/subsurface-scattering.webp"
 									alt="portfolio"
-									className="w-full transform hover:scale-125 transition duration-2000 ease-out"
+									className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
 								/>
-								<h1 className="absolute top-5 left-5 md:top-10 md:left-10 text-gray-50 font-bold text-base md:text-2xl bg-orange-500 rounded-md px-2">
-									Real-time Subsurface Scattering
-								</h1>
-								<h1 className="absolute bottom-5 left-5 md:bottom-10 md:left-10 text-gray-50 font-bold text-xl">
-									01
-								</h1>
+								<div className="content absolute inset-x-[5%] top-[10%] h-fit w-fit">
+									<h1 className="inline font-bold text-gray-50 bg-orange-500 rounded-md px-1.5 py-0.5">
+										Real-time Subsurface Scattering
+									</h1>
+								</div>
+								<div className="absolute inset-x-[5%] bottom-[20%]">
+									<h1 className="absolute text-gray-50 font-bold">
+										01
+									</h1>
+								</div>
 							</div>
 						</a>
 						{/* Single card */}

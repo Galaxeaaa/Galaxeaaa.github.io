@@ -3,7 +3,7 @@ import userData from "@constants/data";
 
 export default function AboutMe() {
 	return (
-		<section className="bg-white dark:bg-gray-800">
+		<section className="bg-white dark:bg-gray-800 isolate">
 			<div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
 				<h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
 					About Me.
@@ -31,7 +31,7 @@ export default function AboutMe() {
 			<div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
 				<div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
 					{/* Social Buttons */}
-					<div className="inline-flex flex-col">
+					<div className="order-last md:order-none inline-flex flex-col">
 						<div>
 							<h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
 								Contact
@@ -132,7 +132,7 @@ export default function AboutMe() {
 						</div>
 					</div>
 					{/* Text area */}
-					<div className="col-span-1 md:col-span-2">
+					<div className="order-first md:order-none col-span-1 md:col-span-2">
 						{userData.about.description?.map((desc, idx) => (
 							<p
 								key={idx}
