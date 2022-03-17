@@ -15,7 +15,7 @@ export default function Navbar() {
 	}, []);
 
 	return (
-		<div className="max-w-7xl mx-auto px-10 py-10 md:py-20">
+		<div className="max-w-7xl mx-auto px-5 py-10 md:py-20">
 			<div className="flex flex-row justify-between items-center overflow-hidden">
 				{/* Logo / Home / Text */}
 
