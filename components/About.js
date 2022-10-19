@@ -4,7 +4,7 @@ import userData from "@constants/data";
 export default function About() {
 	return (
 		<div className="col items-center space-y-8 text-gray-700 px-16">
-			<div className="col space-y-4 text-justify leading-loose">
+			<div className="col space-y-4 text-justify leading-relaxed">
 				{userData.about.description?.map((desc, idx) => (
 					<div key={idx} className="dark:text-gray-300"> {desc} </div>
 				))}

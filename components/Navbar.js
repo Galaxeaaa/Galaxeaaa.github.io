@@ -18,7 +18,7 @@ export default function Navbar() {
 		<div className="bg-white/90 backdrop-blur border-b w-full transition-colors duration-500">
 			<div className="py-4 px-10 max-w-6xl mx-auto">
 				<div className="flex items-center text-lg font-normal space-x-2">
-					<Link href="/#">
+					<Link href="#">
 						<a className="text-xl font-bold text-indigo-500 underline decoration-4 decoration-emerald-300 mr-4">
 							Cheng Wang
 						</a>
