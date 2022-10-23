@@ -39,7 +39,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 					<meta property="article:published_time" content={meta.date} />
 				)}
 			</Head>
-			<main className="bg-gray-50 dark:bg-gray-800 w-full scroll-smooth">
+			<main className="bg-gray-50 dark:bg-gray-800 w-full">
 				<div className="sticky top-0 z-50"><Navbar /></div>
 				<div className="mt-10">{children}</div>
 				<Footer />

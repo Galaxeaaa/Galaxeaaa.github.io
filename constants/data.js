@@ -8,7 +8,7 @@ const userData = {
         {
             title: "Real-Time Texture-Space Subsurface Scattering",
             time: "2021 - 2022",
-            link: "https://gitee.com/galaxea/tssss",
+            link: "https://github.com/Galaxeaaa/tssss",
             imgUrl: "/images/TSSSS.jpg",
             description: [
                 "I applied a new, efficient method which performs convolution of radiance map and weight kernel in texture space. By pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, the method significantly reduced time complexity of convolution.",

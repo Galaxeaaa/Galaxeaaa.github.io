@@ -14,7 +14,7 @@ export default function Home() {
 				<Hero />
 				<DividingLine Title="About Me" id="about"/>
 				<About />
-				<DividingLine Title="Projects" id="projects"/>
+				<DividingLine Title="Selected Projects" id="projects"/>
 				<Projects />
 				<DividingLine Title="Experience" id="experience"/>
 				<Experience />
