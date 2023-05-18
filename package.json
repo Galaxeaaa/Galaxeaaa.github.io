@@ -14,7 +14,8 @@
     "next-themes": "0.0.15",
     "react": "^18.x",
     "react-dom": "^18.x",
-    "react-rough-notation": "^1.0.1"
+    "react-rough-notation": "^1.0.1",
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
