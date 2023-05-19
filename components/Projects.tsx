@@ -1,11 +1,12 @@
 import React from "react";
-import userData from "@constants/data";
+import { projects } from "@/data/data";
 
 export default function Projects() {
 	return (
 		<div className="col space-y-8 text-gray-700 px-16">
-			{userData.projects.map((proj) => (
+			{projects.map((proj, index) => (
 				<ProjectCard
+					key={index}
 					title={proj.title}
 					time={proj.time}
 					link={proj.link}
@@ -19,8 +20,8 @@ export default function Projects() {
 
 const ProjectCard = ({ title, time, link, imgUrl, description }) => {
 	return (
-		<a href={link} className="flex items-center space-x-8 p-8 w-full bg-white rounded-2xl shadow-lg transition-all border-2 border-transparent hover:border-indigo-500">
-			<div className="flex-shrink-0 w-1/3 shadow-lg">
+		<a href={link} className="flex flex-col lg:flex-row items-center space-y-8 md:space-x-8 p-8 w-full bg-white rounded-2xl shadow-lg transition-all border-2 border-transparent hover:border-indigo-500">
+			<div className="flex-shrink-0 w-full max-w-lg lg:w-1/3 shadow-lg">
 				<img src={imgUrl} className="object-cover w-full" />
 			</div>
 			<div className="col">
@@ -28,7 +29,7 @@ const ProjectCard = ({ title, time, link, imgUrl, description }) => {
 				<div className="text-gray-400 mb-4">{time}</div>
 				<div className="col space-y-1 text-justify">
 					{description.map((desc, idx) => (
-						<div key={idx} className="dark:text-gray-300"> {desc} </div>
+						<div key={idx}> {desc} </div>
 					))}
 				</div>
 			</div>
