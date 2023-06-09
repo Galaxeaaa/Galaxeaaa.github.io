@@ -3,7 +3,7 @@ import { projects } from "@/data/data";
 
 export default function Projects() {
 	return (
-		<div className="col space-y-8 text-gray-700 px-16">
+		<div className="flex flex-col space-y-8 text-gray-700 px-16">
 			{projects.map((proj, index) => (
 				<ProjectCard
 					key={index}
@@ -20,7 +20,7 @@ export default function Projects() {
 
 const ProjectCard = ({ title, time, link, imgUrl, description }) => {
 	return (
-		<a href={link} className="flex flex-col lg:flex-row items-center space-y-8 md:space-x-8 p-8 w-full bg-white rounded-2xl shadow-lg transition-all border-2 border-transparent hover:border-indigo-500">
+		<a href={link} className="flex flex-col lg:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 p-8 w-full bg-white rounded-2xl shadow-lg transition-all border-2 border-transparent hover:border-indigo-500">
 			<div className="flex-shrink-0 w-full max-w-lg lg:w-1/3 shadow-lg">
 				<img src={imgUrl} className="object-cover w-full" />
 			</div>

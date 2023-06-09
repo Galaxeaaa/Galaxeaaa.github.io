@@ -42,13 +42,14 @@ export const userData: UserData = {
 
 export const about: About = {
     description: [
-        "Hi! I'm Cheng Wang. I'm currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in physically-based rendering and inverse rendering. I'm driven to make people's lives happier and easier through technology."
+        "Hi! I'm Cheng Wang. I'm currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in novel view synthesis and inverse rendering. I'm driven to make people's lives happier and easier through technology."
     ],
     interests: [
         "Computer Graphics",
         "Computer Vision",
         "Badminton",
-        "Movies",
+        "View Synthesis",
+        "Inverse Rendering",
         "Computer Games",
         "Classical Music",
     ],
@@ -67,52 +68,25 @@ export const about: About = {
     ]
 }
 
-export const experiences: Experience[] = [
-    {
-        title: "Software Engineer Intern",
-        catagory: "company",
-        company: "Electronic Arts, CA, United States",
-        year: "2023",
-        companyLink: "https://www.ea.com/",
-        desc: "Incoming intern.",
-        current: true,
-    },
-    {
-        title: "M.S. in Computer Science",
-        catagory: "education",
-        company: "University of California San Diego, CA, United States",
-        year: "2022 - Present",
-        companyLink: "https://ucsd.edu",
-        desc: "Contributed to subsurface scattering rendering in our engine.",
-        current: true,
-    },
-    {
-        title: "Rendering Engine Engineer Intern",
-        catagory: "company",
-        company: "RaysEngine, Zhejiang, China",
-        year: "2021 - 2022",
-        companyLink: "https://www.raysengine.com/",
-        desc: "Contributed to subsurface scattering rendering in our engine.",
-    },
-    {
-        title: "B.E. in Computer Science and Technology",
-        catagory: "education",
-        company: "Zhejiang University, Zhejiang, China",
-        year: "2018 - 2022",
-        companyLink: "https://www.zju.edu.cn",
-        desc: "Major in Computer Science and Technology with a GPA of 3.9.",
-    },
-    {
-        title: "High School",
-        catagory: "education",
-        company: "Yangzi High School Affiliated to Nanjing Normal University, Jiangsu, China",
-        year: "2015 - 2018",
-        companyLink: "http://www.njyzzx.com/",
-        desc: "",
-    },
-]
-
 export const projects: Project[] = [
+    {
+        title: "Volumetric Renderer",
+        time: "2023",
+        link: "https://github.com/Galaxeaaa/TensoRF",
+        imgUrl: "/images/TensoRF.png",
+        description: [
+            "I implemented Tensorial Radiance Field (TensoRF) following the work of Chen et al. TensoRF represents a radiance field by matrix-vector and vector-vector combinations of tensors. Compared to MLP based NeRF, it is more efficient while preserving comparable quality without customized CUDA implementation."
+        ],
+    },
+    {
+        title: "Implementation of Tensorial Radiance Field (TensoRF) with PyTorch",
+        time: "2022",
+        link: "https://github.com/Galaxeaaa/TensoRF",
+        imgUrl: "/images/TensoRF.png",
+        description: [
+            "I implemented Tensorial Radiance Field (TensoRF) following the work of Chen et al. TensoRF represents a radiance field by matrix-vector and vector-vector combinations of tensors. Compared to MLP based NeRF, it is more efficient while preserving comparable quality without customized CUDA implementation."
+        ],
+    },
     {
         title: "Real-Time Texture-Space Subsurface Scattering",
         time: "2021 - 2022",
@@ -162,5 +136,50 @@ export const projects: Project[] = [
             "We attended China Collegiate Computing Contest -- Mobile Application Innovation Contest held by Apple Inc. and Zhejiang University in 2021, and were awarded Third Prize.",
         ],
     },
+]
+
+export const experiences: Experience[] = [
+    {
+        title: "Software Engineer Intern",
+        catagory: "company",
+        company: "Electronic Arts, CA, United States",
+        year: "2023",
+        companyLink: "https://www.ea.com/",
+        desc: "Incoming intern.",
+        current: true,
+    },
+    {
+        title: "M.S. in Computer Science",
+        catagory: "education",
+        company: "University of California San Diego, CA, United States",
+        year: "2022 - Present",
+        companyLink: "https://ucsd.edu",
+        desc: "Contributed to subsurface scattering rendering in our engine.",
+        current: true,
+    },
+    {
+        title: "Rendering Engine Engineer Intern",
+        catagory: "company",
+        company: "RaysEngine, Zhejiang, China",
+        year: "2021 - 2022",
+        companyLink: "https://www.raysengine.com/",
+        desc: "Contributed to subsurface scattering rendering in our engine.",
+    },
+    {
+        title: "B.E. in Computer Science and Technology",
+        catagory: "education",
+        company: "Zhejiang University, Zhejiang, China",
+        year: "2018 - 2022",
+        companyLink: "https://www.zju.edu.cn",
+        desc: "Major in Computer Science and Technology with a GPA of 3.9.",
+    },
+    // {
+    //     title: "High School",
+    //     catagory: "education",
+    //     company: "Yangzi High School Affiliated to Nanjing Normal University, Jiangsu, China",
+    //     year: "2015 - 2018",
+    //     companyLink: "http://www.njyzzx.com/",
+    //     desc: "",
+    // },
 ]
 
