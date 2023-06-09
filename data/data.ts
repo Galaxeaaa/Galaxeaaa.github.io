@@ -60,6 +60,7 @@ export const about: About = {
         "LaTeX",
         "CUDA",
         "OpenGL",
+        "Unreal Engine",
         "OpenCV",
         "Html",
         "JavaScript",
@@ -70,12 +71,12 @@ export const about: About = {
 
 export const projects: Project[] = [
     {
-        title: "Volumetric Renderer",
+        title: "Volumetric Path Tracing",
         time: "2023",
-        link: "https://github.com/Galaxeaaa/TensoRF",
-        imgUrl: "/images/TensoRF.png",
+        link: "https://github.com/Galaxeaaa/CSE272-lajolla",
+        imgUrl: "/images/VolumetricPathTracing.png",
         description: [
-            "I implemented Tensorial Radiance Field (TensoRF) following the work of Chen et al. TensoRF represents a radiance field by matrix-vector and vector-vector combinations of tensors. Compared to MLP based NeRF, it is more efficient while preserving comparable quality without customized CUDA implementation."
+            "I implemented volumetric path tracing that can handle multiple chromatic heterogeneous volumes with absorption and multiple-scattering, with both phase function sampling and next event estimation, based on an educational physically-based renderer, lajolla."
         ],
     },
     {
