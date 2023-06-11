@@ -48,7 +48,7 @@ const ExperienceCard = ({ title, desc, year, company, companyLink, catagory, las
 			</div>
 			<div className="pt-1 pb-8">
 				<p className="text-lg font-bold">{title}</p>
-				<a href={companyLink} className="mb-2 text-gray-700 hover:underline hover:text-indigo-600">{company}</a>
+				<a href={companyLink} className="mb-2 text-gray-700">{company}</a>
 				{/* <p className="text-gray-700">{desc}</p> */}
 			</div>
 		</div>
