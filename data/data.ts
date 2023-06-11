@@ -111,7 +111,7 @@ export const projects: Project[] = [
         title: "Cyber Creed",
         time: "2021",
         link: "",
-        imgUrl: "/images/CyberCreed.jpg",
+        imgUrl: "/images/CyberCreed.png",
         description: [
             "We designed and implemented a 3D computer game resembling Assassin's Creed with Unreal Engine 4.",
             "Worked in a group of five I mainly focused on scene and level design, enemy animation and behavior design, special effect design based on particle system, etc. And I assisted to complete other modules in the game.",
