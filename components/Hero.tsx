@@ -3,9 +3,13 @@ import { userData } from "@/data/data";
 
 export default function Hero() {
 	return (
-		<div className="text-gray-700">
-			<div className="flex justify-center items-center space-x-20">
+		<div className="px-16 relative text-gray-700">
+			{/* <div className="flex justify-center items-center space-x-20"> */}
 				{/* Image container */}
+				<div className="invisible lg:visible absolute w-[13cm] px-16 right-0 text-right text-gray-400">
+					“Everything we see hides another thing, we always want to see what is hidden by what we see.” <br/>
+					-- Rene Magritte
+				</div>
 				<div className="col items-center text-center">
 					<div className="rounded-full overflow-hidden w-60 h-60 mx-auto shadow-lg">
 						<img className="-mt-6" src={userData.avatarUrl} alt="avatar" />
@@ -27,7 +31,7 @@ export default function Hero() {
 						</a>
 					</div>
 				</div>
-			</div>
+			{/* </div> */}
 		</div >
 	);
 }
