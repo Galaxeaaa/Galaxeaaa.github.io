@@ -3,7 +3,7 @@ import { experiences } from "@/data/data";
 
 export default function Experience() {
 	return (
-		<div className="grid grid-cols-1 max-w-max mx-auto px-10">
+		<div className="grid grid-cols-1 max-w-max mx-auto">
 			{experiences.map((exp, idx) => (
 				<ExperienceCard
 					key={idx}
@@ -24,8 +24,8 @@ export default function Experience() {
 const ExperienceCard = ({ title, desc, year, company, companyLink, catagory, last, current }) => {
 	return (
 		<div className="flex">
-			<p className="pt-[7px] mr-4 w-32 text-right text-md text-gray-400">{year}</p>
-			<div className="flex flex-col items-center mr-4">
+			<p className="pt-[7px] mr-4 w-32 hidden sm:block text-right text-md text-gray-400">{year}</p>
+			<div className="flex flex-col w-10 flex-shrink-0 items-center mr-4">
 				<div>
 					{current === true ?
 						<div className="absolute w-10 h-10 border-[3px] rounded-full border-indigo-300 animate-ping"></div>

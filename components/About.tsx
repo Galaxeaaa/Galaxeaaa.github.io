@@ -5,8 +5,8 @@ export default function About() {
 	let linkClassName = "text-black underline hover:text-indigo-700 hover:decoration-indigo-500";
 
 	return (
-		<div className="col items-center space-y-8 text-gray-700 px-16">
-			<div className="col space-y-4 text-lg text-justify">
+		<div className="col items-center space-y-8 text-gray-700">
+			<div className="col space-y-4 text-justify">
 				{/* {about.description?.map((desc, idx) => (
 					<div key={idx}> {desc} </div>
 				))} */}
@@ -14,19 +14,19 @@ export default function About() {
 
 				<p>I was also a Rendering Engine Engineer Intern at <a href="https://www.raysengine.com/" className={linkClassName}>Rays Engine</a>. I am currently a Software Engineer Intern at <a href="https://www.ea.com" className={linkClassName}>Electronic Arts</a>. Please feel free to take a look at my <a href="https://drive.google.com/file/d/1O_jdcHgd1_u4p-KMWuS6TaWNmiuWD0Pd/view?usp=sharing" className={linkClassName}>CV</a>.</p>
 			</div>
-			<div className="flex space-x-8">
-				<div className="col w-1/2 bg-gray-100 px-4 py-2 rounded-lg">
-					<div className="text-xl font-semibold mb-2">Interests</div>
+			<div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+				<div className="col md:w-1/2 bg-gray-100 px-4 py-2 rounded-lg">
+					<div className="text-lg font-semibold mb-2">Skills</div>
 					<div className="flex flex-wrap">
-						{about.interests.map((str, idx) => (
+						{about.skills.map((str, idx) => (
 							<div key={idx} className="mr-2 mb-2 px-2 py-1 bg-white rounded-lg shadow select-none hover:-translate-y-0.5 hover:scale-105 transition-all">{str}</div>
 						))}
 					</div>
 				</div>
-				<div className="col w-1/2 bg-gray-100 px-4 py-2 rounded-lg">
-					<div className="text-xl font-semibold mb-2">Skills</div>
+				<div className="col md:w-1/2 bg-gray-100 px-4 py-2 rounded-lg">
+					<div className="text-lg font-semibold mb-2">Interests</div>
 					<div className="flex flex-wrap">
-						{about.skills.map((str, idx) => (
+						{about.interests.map((str, idx) => (
 							<div key={idx} className="mr-2 mb-2 px-2 py-1 bg-white rounded-lg shadow select-none hover:-translate-y-0.5 hover:scale-105 transition-all">{str}</div>
 						))}
 					</div>

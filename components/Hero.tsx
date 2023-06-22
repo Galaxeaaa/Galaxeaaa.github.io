@@ -3,15 +3,15 @@ import { userData } from "@/data/data";
 
 export default function Hero() {
 	return (
-		<div className="px-16 relative text-gray-700">
+		<div className="relative text-gray-700">
 			{/* <div className="flex justify-center items-center space-x-20"> */}
 				{/* Image container */}
-				<div className="invisible lg:visible absolute w-[13cm] px-16 right-0 text-right text-gray-400">
+				{/* <div className="invisible lg:visible absolute w-[13cm] px-16 right-0 text-right text-gray-400">
 					“Everything we see hides another thing, we always want to see what is hidden by what we see.” <br/>
 					-- Rene Magritte
-				</div>
+				</div> */}
 				<div className="col items-center text-center">
-					<div className="rounded-full overflow-hidden w-60 h-60 mx-auto shadow-lg">
+					<div className="rounded-full overflow-hidden w-full max-w-[7cm] aspect-square mx-auto shadow-lg">
 						<img className="-mt-6" src={userData.avatarUrl} alt="avatar" />
 					</div>
 					<div className="text-3xl font-bold mt-4">Cheng Wang 王呈</div>

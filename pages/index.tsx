@@ -10,7 +10,7 @@ export default function Home() {
 			title="Cheng Wang"
 			description=""
 		>
-			<div className="col max-w-6xl mx-auto">
+			<div className="col max-w-6xl mx-auto px-6 md:px-16">
 				<Hero />
 				<DividingLine title="About Me" id="about" />
 				<About />
@@ -26,7 +26,7 @@ export default function Home() {
 
 function DividingLine({ title, id }) {
 	return (
-		<div className="flex py-14 space-x-4 items-center px-10" id={id}>
+		<div className="flex py-14 space-x-4 items-center -px-6" id={id}>
 			{title ?
 				(<>
 					<div className="h-0.5 w-full bg-gray-200"> </div>

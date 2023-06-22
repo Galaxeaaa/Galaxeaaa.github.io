@@ -44,29 +44,22 @@ export const about: About = {
     description: [
         "Hi! I'm Cheng Wang. I'm currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in novel view synthesis and inverse rendering. I'm driven to make people's lives happier and easier through technology."
     ],
-    interests: [
-        "Computer Graphics",
-        "Computer Vision",
-        "Badminton",
-        "View Synthesis",
-        "Inverse Rendering",
-        "Computer Games",
-        "Classical Music",
-    ],
     skills: [
         "C/C++",
         "Python",
         "PyTorch",
-        "LaTeX",
         "CUDA",
         "OpenGL",
         "Unreal Engine",
-        "OpenCV",
-        "Html",
-        "JavaScript",
+        "TypeScript",
         "Next.js",
         "SwiftUI",
-    ]
+    ],
+    interests: [
+        "Badminton",
+        "Computer Games",
+        "Classical Music",
+    ],
 }
 
 export const projects: Project[] = [
