@@ -42,16 +42,18 @@ export const userData: UserData = {
 
 export const about: About = {
     description: [
-        "Hi! I'm Cheng Wang. I'm currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in novel view synthesis and inverse rendering. I'm driven to make people's lives happier and easier through technology."
+        "Hi! I'm Cheng Wang, currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in neural rendering, novel view synthesis and inverse rendering. I'm driven to make people's lives happier and easier through technology."
     ],
     skills: [
-        "C/C++",
+        "C",
+        "C++",
         "Python",
+        "Rust",
         "PyTorch",
         "CUDA",
-        "OpenGL",
         "Unreal Engine",
         "TypeScript",
+        "OpenGL",
         "Next.js",
         "SwiftUI",
     ],
@@ -59,6 +61,7 @@ export const about: About = {
         "Badminton",
         "Computer Games",
         "Classical Music",
+        "Cooking",
     ],
 }
 
@@ -134,15 +137,6 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
     {
-        title: "Software Engineer Intern",
-        catagory: "company",
-        company: "Electronic Arts, CA, United States",
-        year: "2023",
-        companyLink: "https://www.ea.com/",
-        desc: "Incoming intern.",
-        current: true,
-    },
-    {
         title: "M.S. in Computer Science",
         catagory: "education",
         company: "University of California San Diego, CA, United States",
@@ -150,6 +144,15 @@ export const experiences: Experience[] = [
         companyLink: "https://ucsd.edu",
         desc: "Contributed to subsurface scattering rendering in our engine.",
         current: true,
+    },
+    {
+        title: "Software Engineer Intern",
+        catagory: "company",
+        company: "Electronic Arts, CA, United States",
+        year: "2023",
+        companyLink: "https://www.ea.com/",
+        desc: "Incoming intern.",
+        current: false,
     },
     {
         title: "Rendering Engine Engineer Intern",
