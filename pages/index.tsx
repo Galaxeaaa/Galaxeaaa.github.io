@@ -1,6 +1,7 @@
 import PageContainer from "@/components/PageContainer";
 import Hero from "@/components/Hero";
 import About from "@/components/About"
+import Publications from "@/components/Publications"
 import Projects from "@/components/Projects"
 import Experience from "@/components/Experience";
 
@@ -14,6 +15,8 @@ export default function Home() {
 				<Hero />
 				<DividingLine title="About Me" id="about" />
 				<About />
+				<DividingLine title="Publications" id="publications" />
+				<Publications />
 				<DividingLine title="Selected Projects" id="projects" />
 				<Projects />
 				<DividingLine title="Experience" id="experience" />
