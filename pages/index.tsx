@@ -4,12 +4,13 @@ import About from "@/components/About"
 import Publications from "@/components/Publications"
 import Projects from "@/components/Projects"
 import Experience from "@/components/Experience";
+import Head from "next/script";
 
 export default function Home() {
 	return (
 		<PageContainer
-			title="Cheng Wang"
-			description=""
+			title="Cheng Wang Homepage"
+			description="Homepage of Cheng Wang"
 		>
 			<div className="col max-w-6xl mx-auto px-6 md:px-16">
 				<Hero />
