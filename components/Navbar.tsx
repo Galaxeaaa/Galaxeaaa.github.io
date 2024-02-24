@@ -1,72 +1,37 @@
 "use client"
 
-import React, { useState } from "react";
+import React from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 
 export default function Navbar() {
-	const [isToggled, setIsToggled] = useState(false);
-
-	function handleToggle() {
-		setIsToggled(!isToggled);
-	};
-
-	function closeToggle() {
-		setIsToggled(false);
-	};
-
 	return (
 		<>
-			<div className={`${isToggled ? 'h-72' : 'h-20'} sticky bg-white/90 backdrop-blur border-b w-full transition-all duration-500 top-0 z-40 overflow-hidden`}>
-				<div className="flex flex-col items-end space-y-2 px-6 py-4">
-					<div className="md:px-10 w-full max-w-6xl mx-auto flex items-center justify-between sm:justify-start text-lg font-normal space-x-2">
-						<div onClick={() => {scroll.scrollToTop({ duration: 1 }); closeToggle()}} className="cursor-pointer text-xl font-bold text-indigo-500 underline decoration-4 decoration-emerald-300 mr-4">
-							Cheng Wang
-						</div>
-						<div className="hidden sm:block">
-							<NavLink to="about" onClick={closeToggle}>About</NavLink>
-						</div>
-						<div className="hidden sm:block">
-							<NavLink to="publications" onClick={closeToggle}>Publications</NavLink>
-						</div>
-						<div className="hidden sm:block">
-							<NavLink to="projects" onClick={closeToggle}>Projects</NavLink>
-						</div>
-						<div className="hidden sm:block">
-							<NavLink to="experience" onClick={closeToggle}>Experience</NavLink>
-						</div>
-						<button onClick={handleToggle} className="w-12 h-12 p-2 text-2xl rounded-full text-gray-700 text-center hover:text-indigo-700 hover:bg-indigo-500/20 sm:hidden">=</button>
+			<div className="h-20 sticky bg-white/90 backdrop-blur border-b w-full transition-all duration-500 top-0 z-40 overflow-hidden">
+				<div className="flex items-center justify-start px-10 w-full max-w-6xl mx-auto h-full my-auto">
+					<div onClick={() => { scroll.scrollToTop({ duration: 1 }); }} className="cursor-pointer text-xl font-bold text-color-accent-1 underline decoration-4 decoration-color-accent-2 mr-4">
+						Cheng Wang
 					</div>
-					<NavLink to="about" onClick={handleToggle}>About</NavLink>
-					<NavLink to="publications" onClick={handleToggle}>Publications</NavLink>
-					<NavLink to="projects" onClick={handleToggle}>Projects</NavLink>
-					<NavLink to="experience" onClick={handleToggle}>Experience</NavLink>
+					<div className="flex-grow"></div>
+					<div className="flex justify-self-end font-medium">
+						<CostomScrollLink to="about">About</CostomScrollLink>
+						<CostomScrollLink to="publications">Publications</CostomScrollLink>
+						<CostomScrollLink to="projects">Projects</CostomScrollLink>
+						<CostomScrollLink to="experience">Experience</CostomScrollLink>
+					</div>
 				</div>
 			</div>
-
-			{/* <div className={`absolute ${isToggled ? 'translate-x-0' : 'translate-x-full'} right-0 transition-all bg-white/90 backdrop-blur border-b h-screen z-50 sm:hidden`}>
-				<div className="flex flex-col items-end px-6 -pt-4 pb-4">
-					<NavLink to="about" onClick={handleToggle}>About</NavLink>
-					<NavLink to="projects" onClick={handleToggle}>Projects</NavLink>
-					<NavLink to="experience" onClick={handleToggle}>Experience</NavLink>
-				</div>
-			</div> */}
 		</>
 	);
 }
 
-function NavLink({ to, children, onClick }) {
+function CostomScrollLink({ to, children }) {
 	return (
-		<ScrollLink to={to} spy={true} offset={-200} className="no-underline">
-			{onClick ?
-				<p onClick={onClick} className="cursor-pointer text-gray-700 hover:text-indigo-700 hover:bg-indigo-500/20 transition-all ease-in-out px-4 py-2 rounded-lg" >
-					{children}
-				</p>
-				:
-				<p className="cursor-pointer text-gray-700 hover:text-indigo-700 hover:bg-indigo-500/20 transition-all ease-in-out px-4 py-2 rounded-lg" >
-					{children}
-				</p>
-			}
+		<ScrollLink to={to} spy={true} offset={-200} className="no-underline hidden sm:block">
+			<p className="cursor-pointer text-color-plain hover:text-color-accent-1-dark
+			hover:bg-color-accent-1/20 transition-all ease-in-out px-4 py-2 rounded-lg" >
+				{children}
+			</p>
 		</ScrollLink>
 	)
 }

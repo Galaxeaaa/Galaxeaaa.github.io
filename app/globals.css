@@ -7,13 +7,13 @@ html {
 	margin: 0;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	scroll-padding-top: 40px;
-    @apply scroll-smooth;
+	@apply scroll-smooth;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
-	@apply underline hover:text-indigo-700 hover:decoration-indigo-500
+	@apply underline hover:text-color-accent-1-dark hover:decoration-color-accent-1
 }
 
 * {

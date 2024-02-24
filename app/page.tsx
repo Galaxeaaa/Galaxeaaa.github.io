@@ -30,7 +30,7 @@ function DividingLine({ title, id }) {
 			{title ?
 				(<>
 					<div className="h-0.5 w-full bg-gray-200"> </div>
-					<div className="text-2xl text-indigo-500 font-semibold underline decoration-4 decoration-emerald-300 min-w-fit"> {title} </div>
+					<div className="text-2xl text-color-accent-1 font-semibold underline decoration-4 decoration-color-accent-2 min-w-fit"> {title} </div>
 					<div className="h-0.5 w-full bg-gray-200"> </div>
 				</>)
 				: (
