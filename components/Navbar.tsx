@@ -1,11 +1,10 @@
+"use client"
+
 import React, { useState } from "react";
-import { Link as ScrollLink, Element, animateScroll as scroll } from "react-scroll";
-import { useRouter } from "next/router";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 
 export default function Navbar() {
-	const router = useRouter();
-	console.log(router.asPath);
-
 	const [isToggled, setIsToggled] = useState(false);
 
 	function handleToggle() {

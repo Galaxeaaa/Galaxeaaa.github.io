@@ -9,7 +9,7 @@ export default function Projects() {
 					key={index}
 					title={proj.title}
 					time={proj.time}
-					link={proj.link}
+					link={proj.url}
 					imgUrl={proj.imgUrl}
 					description={proj.desc}
 				/>

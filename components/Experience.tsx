@@ -8,11 +8,11 @@ export default function Experience() {
 				<ExperienceCard
 					key={idx}
 					title={exp.title}
-					catagory={exp.catagory}
+					catagory={exp.type}
 					desc={exp.desc}
 					year={exp.year}
 					company={exp.company}
-					companyLink={exp.companyLink}
+					companyLink={exp.url}
 					last={idx === experiences.length - 1 ? 1 : 0}
 					current={exp.current}
 				/>

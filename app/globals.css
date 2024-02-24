@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	scroll-padding-top: 40px;
+    @apply scroll-smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	@apply underline hover:text-indigo-700 hover:decoration-indigo-500
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* If you want to add a customized class:
+@layer components {
+	.new-class-name {
+		@apply existed-class...
+	}
+} */

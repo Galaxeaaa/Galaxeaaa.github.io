@@ -1,5 +1,3 @@
-import { type } from "os";
-
 type UserData = {
     name: string;
     avatarUrl: string;
@@ -21,17 +19,17 @@ type Publication = {
 type Project = {
     title: string;
     time: string;
-    link: string;
+    url: string;
     imgUrl: string;
     desc: string[];
 };
 
 type Experience = {
     title: string;
-    catagory: string;
+    type: string;
     company: string;
     year: string;
-    companyLink: string;
+    url: string;
     desc: string;
     current?: boolean;
 };
@@ -55,23 +53,23 @@ export const about: About = {
         "Hi! I'm Cheng Wang, currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in neural rendering, novel view synthesis and inverse rendering. I'm driven to make people's lives happier and easier through technology."
     ],
     skills: [
-        "C",
-        "C++",
+        "C/C++",
         "Python",
-        "Rust",
         "PyTorch",
-        "CUDA",
-        "Unreal Engine",
-        "TypeScript",
+        "Rust",
+        "Unreal Engine 5",
         "OpenGL",
+        "CUDA",
+        "TypeScript",
         "Next.js",
         "SwiftUI",
     ],
     interests: [
         "Badminton",
-        "Computer Games",
+        "Chess",
         "Classical Music",
         "Cooking",
+        "Computer Games",
     ],
 }
 
@@ -91,7 +89,7 @@ export const projects: Project[] = [
     {
         title: "Volumetric Path Tracing",
         time: "2023",
-        link: "https://github.com/Galaxeaaa/CSE272-lajolla",
+        url: "https://github.com/Galaxeaaa/CSE272-lajolla",
         imgUrl: "/images/VolumetricPathTracing.png",
         desc: [
             "I implemented volumetric path tracing that can handle multiple chromatic heterogeneous volumes with absorption and multiple-scattering, with both phase function sampling and next event estimation, based on an educational physically-based renderer, lajolla."
@@ -100,7 +98,7 @@ export const projects: Project[] = [
     {
         title: "Implementation of Tensorial Radiance Field (TensoRF) with PyTorch",
         time: "2022",
-        link: "https://github.com/Galaxeaaa/TensoRF",
+        url: "https://github.com/Galaxeaaa/TensoRF",
         imgUrl: "/images/TensoRF.png",
         desc: [
             "I implemented Tensorial Radiance Field (TensoRF) following the work of Chen et al. TensoRF represents a radiance field by matrix-vector and vector-vector combinations of tensors. Compared to MLP based NeRF, it is more efficient while preserving comparable quality without customized CUDA implementation."
@@ -109,7 +107,7 @@ export const projects: Project[] = [
     {
         title: "Real-Time Texture-Space Subsurface Scattering",
         time: "2021 - 2022",
-        link: "https://github.com/Galaxeaaa/tssss",
+        url: "https://github.com/Galaxeaaa/tssss",
         imgUrl: "/images/TSSSS.jpg",
         desc: [
             "I applied a new, efficient method which performs convolution of radiance map and weight kernel in texture space. By pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, the method significantly reduced time complexity of convolution.",
@@ -119,7 +117,7 @@ export const projects: Project[] = [
     {
         title: "Tiled Forward Shading",
         time: "2021",
-        link: "https://github.com/Galaxeaaa/ForwardPlus",
+        url: "https://github.com/Galaxeaaa/ForwardPlus",
         imgUrl: "/images/ForwardPlus.jpg",
         desc: [
             "I implemented tiled forward rendering and tiled deferred rendering according to existing papers, and optimized light culling pass by using multiple frustum dividing and light-frustum intersection strategies. Afterwards, I conducted experiments to compare the performance of the strategies mentioned above. Finally I transplanted the algorithms aborementioned to android devices.",
@@ -128,7 +126,7 @@ export const projects: Project[] = [
     {
         title: "Cyber Creed",
         time: "2021",
-        link: "",
+        url: "",
         imgUrl: "/images/CyberCreed.png",
         desc: [
             "We designed and implemented a 3D computer game resembling Assassin's Creed with Unreal Engine 4.",
@@ -138,7 +136,7 @@ export const projects: Project[] = [
     {
         title: "Medical Appointment System",
         time: "2021",
-        link: "https://github.com/Galaxeaaa/MedicalAppointmentSystem-Frontend",
+        url: "https://github.com/Galaxeaaa/MedicalAppointmentSystem-Frontend",
         imgUrl: "/images/HospitalWebsite.jpg",
         desc: [
             "I led a 20-people team and developed a hospital website based on Vue.js and Java, whose main functions including information viewing, registration appointment, online consultation, video diagnosis, online forum, etc.",
@@ -148,7 +146,7 @@ export const projects: Project[] = [
     {
         title: "Petiu: Pet farewell service system",
         time: "2021",
-        link: "",
+        url: "",
         imgUrl: "/images/Petiu.jpg",
         desc: [
             "Worked in a group of three, I designed and developed IOS App \"Petiu\" with SwiftUI.",
@@ -160,36 +158,36 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
     {
         title: "M.S. in Computer Science",
-        catagory: "education",
+        type: "education",
         company: "University of California San Diego, CA, United States",
         year: "2022 - Present",
-        companyLink: "https://ucsd.edu",
+        url: "https://ucsd.edu",
         desc: "Contributed to subsurface scattering rendering in our engine.",
         current: true,
     },
     {
         title: "Software Engineer Intern",
-        catagory: "company",
+        type: "company",
         company: "Electronic Arts, CA, United States",
         year: "2023",
-        companyLink: "https://www.ea.com/",
+        url: "https://www.ea.com/",
         desc: "Incoming intern.",
         current: false,
     },
     {
         title: "Rendering Engine Engineer Intern",
-        catagory: "company",
+        type: "company",
         company: "RaysEngine, Zhejiang, China",
         year: "2021 - 2022",
-        companyLink: "https://www.raysengine.com/",
+        url: "https://www.raysengine.com/",
         desc: "Contributed to subsurface scattering rendering in our engine.",
     },
     {
         title: "B.E. in Computer Science and Technology",
-        catagory: "education",
+        type: "education",
         company: "Zhejiang University, Zhejiang, China",
         year: "2018 - 2022",
-        companyLink: "https://www.zju.edu.cn",
+        url: "https://www.zju.edu.cn",
         desc: "Major in Computer Science and Technology with a GPA of 3.9.",
     },
     // {

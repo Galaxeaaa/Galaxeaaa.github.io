@@ -4,16 +4,10 @@ import About from "@/components/About"
 import Publications from "@/components/Publications"
 import Projects from "@/components/Projects"
 import Experience from "@/components/Experience";
-import Head from "next/script";
 
 export default function Home() {
 	return (
-		<PageContainer
-			title="Cheng Wang"
-			description="Personal homepage of Cheng Wang."
-			image="/images/og-image.jpg"
-			url="https://galaxeaaa.github.io/"
-		>
+		<PageContainer>
 			<div className="col max-w-6xl mx-auto px-6 md:px-16">
 				<Hero />
 				<DividingLine title="About Me" id="about" />
@@ -30,7 +24,7 @@ export default function Home() {
 	);
 }
 
-function DividingLine({ title, id }) {
+export function DividingLine({ title, id }) {
 	return (
 		<div className="flex py-14 space-x-4 items-center -px-6" id={id}>
 			{title ?
