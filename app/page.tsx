@@ -24,7 +24,7 @@ export default function Home() {
 	);
 }
 
-export function DividingLine({ title, id }) {
+function DividingLine({ title, id }) {
 	return (
 		<div className="flex py-14 space-x-4 items-center -px-6" id={id}>
 			{title ?
