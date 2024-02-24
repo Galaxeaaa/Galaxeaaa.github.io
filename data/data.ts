@@ -146,7 +146,7 @@ export const projects: Project[] = [
     {
         title: "Petiu: Pet farewell service system",
         time: "2021",
-        url: "",
+        url: "https://weiranzhou.github.io/project-Petiu",
         imgUrl: "/images/Petiu.jpg",
         desc: [
             "Worked in a group of three, I designed and developed IOS App \"Petiu\" with SwiftUI.",
