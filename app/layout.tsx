@@ -10,30 +10,44 @@ const url = "https://galaxeaaa.github.io/";
 const image = "/images/og-image.jpg";
 
 export const metadata: Metadata = {
-  title: title,
-  description: description,
-  openGraph: {
-    type: "website",
-    title: title,
-    images: image,
-    url: url,
-  },
-  twitter: {
-    card: "summary_large_image",
+    metadataBase: new URL(url),
     title: title,
     description: description,
-    images: image,
-  }
+    openGraph: {
+        title: title,
+        description: description,
+        images: [
+            {
+                url: image,
+                width: 800,
+                height: 600,
+            },
+            {
+                url: image,
+                width: 1800,
+                height: 1600,
+            },
+        ],
+        url: url,
+        type: "website",
+        locale: "en_US",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: title,
+        description: description,
+        images: image,
+    }
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={inter.className}>{children}</body>
+        </html>
+    );
 }
