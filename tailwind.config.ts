@@ -13,6 +13,7 @@ const config: Config = {
 				"color": {
 					"plain": "#374151", // gray-700
 					"light": "#9ca3af", // gray-400
+					"extralight": "#f3f4f6", // gray-100
 					"accent": {
 						"1": {
 							"light": "#a5b4fc", // indigo-300

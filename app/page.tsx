@@ -29,12 +29,12 @@ function DividingLine({ title, id }) {
 		<div className="flex py-14 space-x-4 items-center -px-6" id={id}>
 			{title ?
 				(<>
-					<div className="h-0.5 w-full bg-gray-200"> </div>
-					<div className="text-2xl text-color-accent-1 font-semibold underline decoration-4 decoration-color-accent-2 min-w-fit"> {title} </div>
-					<div className="h-0.5 w-full bg-gray-200"> </div>
+					<div className="h-0.5 w-full bg-color-light"> </div>
+					<div className="text-xl text-color-accent-1 font-semibold underline decoration-4 decoration-color-accent-2 min-w-fit"> {title} </div>
+					<div className="h-0.5 w-full bg-color-light"> </div>
 				</>)
 				: (
-					<div className="h-0.5 w-full bg-gray-200"> </div>
+					<div className="h-0.5 w-full bg-color-light"> </div>
 				)
 			}
 		</div>

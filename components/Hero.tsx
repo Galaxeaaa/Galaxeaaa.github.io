@@ -1,27 +1,37 @@
 import React from "react";
+import Image from "next/image";
 import { userData } from "@/data/data";
-import RotatingCard from "@/utils/HoverCard"
+import { CardBody, CardContainer, CardItem } from "@/utils/3DCard";
 
 export default function Hero() {
 	return (
 		<div className="relative text-color-plain">
-			{/* <div className="flex justify-center items-center space-x-20"> */}
-			{/* Image container */}
-			{/* <div className="invisible lg:visible absolute w-[13cm] px-16 right-0 text-right text-gray-400">
-					“Everything we see hides another thing, we always want to see what is hidden by what we see.” <br/>
-					-- Rene Magritte
-				</div> */}
+			{/* “Everything we see hides another thing, we always want to see what is hidden by what we see.” <br />
+			-- Rene Magritte */}
 			<div className="col items-center text-center">
-				<div className="max-w-[7cm] aspect-square mx-auto">
-					{/* <RotatingCard> */}
-					<div className="overflow-hidden max-w-[7cm] aspect-square mx-auto shadow-lg">
-						<img className="-mt-6" src={userData.avatarUrl} alt="avatar" />
-					</div>
-					{/* </RotatingCard> */}
-				</div>
-				<div className="text-3xl font-bold mt-4">Cheng Wang 王呈</div>
-				<div className="text-lg pt-2 text-color-light">chengwang@ucsd.edu</div>
-				<div className="flex justify-center items-center space-x-2 pt-4">
+				<CardContainer className="">
+					<CardBody className="relative group/card border-0 w-auto h-auto sm:h-[25rem] px-20 py-6 flex flex-col items-center dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2]">
+						<CardItem
+							translateZ="80"
+							className="overflow-hidden max-w-[7cm] aspect-square mx-auto shadow-lg"
+						>
+							<img className="-mt-6" src={userData.avatarUrl} alt="avatar" />
+						</CardItem>
+						<CardItem
+							translateZ="100"
+							className="text-3xl font-bold mt-4"
+						>
+							Cheng Wang 王呈
+						</CardItem>
+						<CardItem
+							translateZ="60"
+							className="text-lg pt-2 text-color-light"
+						>
+							chengwang@ucsd.edu
+						</CardItem>
+					</CardBody>
+				</CardContainer>
+				<div className="flex justify-center items-center space-x-2">
 					<a href="mailto:chengwang@ucsd.edu">
 						<svg className="transition fill-color-accent-1 hover:fill-color-accent-1-dark" viewBox="0 0 1365 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10694" width="36" height="36"><path d="M684.00064 607.733333L1282.005973 9.728A133.077333 133.077333 0 0 0 1232.00064 0h-1098.666667c-16.938667 0-33.205333 3.2-48.138666 8.93866l598.805333 598.794666z" p-id="10695"></path><path d="M684.00064 728.394667l-664.533333-664.533334A132.48 132.48 0 0 0 0.00064 133.333333v757.333334C0.00064 964.266667 59.733973 1024 133.333973 1024h1098.666667c73.6 0 133.333333-59.733333 133.333333-133.333333v-757.333334a133.013333 133.013333 0 0 0-18.528-67.733333L684.00064 728.394667z" p-id="10696"></path></svg>
 					</a>

@@ -57,22 +57,21 @@ export default function About() {
 				</p>
 			</div>
 			<div className="flex flex-col text-sm md:flex-row space-y-8 md:space-y-0 md:space-x-8">
-				<div className="col md:w-1/2 bg-gray-100 px-4 py-2">
-					<div className="text-lg font-semibold mb-2">Skills</div>
-					<div className="flex flex-wrap">
-						{about.skills.map((str, idx) => (
-							<Tag key={idx} str={str} />
-						))}
-					</div>
-				</div>
-				<div className="col md:w-1/2 bg-gray-100 px-4 py-2">
-					<div className="text-lg font-semibold mb-2">Interests</div>
-					<div className="flex flex-wrap">
-						{about.interests.map((str, idx) => (
-							<Tag key={idx} str={str} />
-						))}
-					</div>
-				</div>
+				<TagRegion title="Skills" tags={about.skills} />
+				<TagRegion title="Interests" tags={about.interests} />
+			</div>
+		</div>
+	);
+}
+
+function TagRegion({ title, tags }) {
+	return (
+		<div className="col bg-color-extralight px-4 py-2">
+			<div className="text-lg font-semibold mb-2">{title}</div>
+			<div className="flex flex-wrap">
+				{tags.map((str, idx) => (
+					<Tag key={idx} str={str} />
+				))}
 			</div>
 		</div>
 	);
