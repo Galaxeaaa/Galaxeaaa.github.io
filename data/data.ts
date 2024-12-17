@@ -12,7 +12,9 @@ type Publication = {
     myid?: number;
     year: string;
     publisher: string;
-    link: string;
+    project_url?: string;
+    paper_url: string;
+    code_url?: string;
     desc: string;
 };
 
@@ -28,7 +30,8 @@ type Experience = {
     title: string;
     type: string;
     company: string;
-    year: string;
+    location?: string;
+    time: string;
     url: string;
     desc: string;
     current?: boolean;
@@ -66,33 +69,64 @@ export const about: About = {
     ],
     interests: [
         "Badminton",
-        "Chess",
         "Classical Music",
-        "Cooking",
         "Computer Games",
+        "Cooking",
+        "Chess",
     ],
 }
 
 export const publications: Publication[] = [
     {
+        title: "HotSpot: Screened Poisson Equation for Signed Distance Function Optimization",
+        authors: ["Zimo Wang*", "Cheng Wang*", "Taiki Yoshino", "Sirui Tao", "Ziyang Fu", "Tzu-Mao Li"],
+        myid: 2,
+        year: "2024",
+        publisher: "arXiv 2025",
+        paper_url: "https://arxiv.org/abs/2411.14628",
+        code_url: "Coming",
+        desc: "Neural Signed Distance Field optimization from point clouds with heat method.",
+    },
+    {
+        title: "Near-Field Lighting Estimation via Ray Regression",
+        authors: ["Cheng Wang", "Tzu-mao Li"],
+        myid: 1,
+        year: "2024",
+        publisher: "Master Thesis",
+        paper_url: "https://escholarship.org/uc/item/27v4090s",
+        code_url: "https://github.com/Galaxeaaa/LightRayDiffusion",
+        desc: "Better near-field lighting estimation by overparameterizing lighting locations as ray bundles.",
+    },
+    {
         title: "ZeroRF: Fast Sparse View 360° Reconstruction with Zero Pretraining",
         authors: ["Ruoxi Shi", "Xinyue Wei", "Cheng Wang", "Hao Su"],
         myid: 3,
         year: "2023",
-        publisher: "arXiv 2023",
-        link: "https://arxiv.org/abs/2312.09249",
+        publisher: "CVPR 2024",
+        paper_url: "https://arxiv.org/abs/2312.09249",
+        project_url: "https://sarahweiii.github.io/zerorf/",
+        code_url: "https://github.com/eliphatfs/zerorf",
         desc: "A novel per-scene optimization method addressing the challenge of sparse view 360° reconstruction in neural field representations.",
-    }
+    },
 ]
 
 export const projects: Project[] = [
     {
-        title: "Volumetric Path Tracing",
+        title: "Volumetric Path Tracer",
         time: "2023",
         url: "https://github.com/Galaxeaaa/CSE272-lajolla",
         imgUrl: "/images/VolumetricPathTracing.png",
         desc: [
-            "I implemented volumetric path tracing that can handle multiple chromatic heterogeneous volumes with absorption and multiple-scattering, with both phase function sampling and next event estimation, based on an educational physically-based renderer, lajolla."
+            "A volumetric path tracer that can handle multiple chromatic heterogeneous volumes with absorption and multiple-scattering, with both phase function sampling and next event estimation, based on an educational physically-based renderer, lajolla."
+        ],
+    },
+    {
+        title: "Autonomous Vehicle Motion Forecasting",
+        time: "2023",
+        url: "https://github.com/Galaxeaaa/cse251b-project",
+        imgUrl: "/images/vehicle-trajectory-prediction.png",
+        desc: [
+            "A course project using deep learning models to forecast autonomous vehicle motion, predicting object positions three seconds ahead."
         ],
     },
     {
@@ -101,7 +135,7 @@ export const projects: Project[] = [
         url: "https://github.com/Galaxeaaa/TensoRF",
         imgUrl: "/images/TensoRF.png",
         desc: [
-            "I implemented Tensorial Radiance Field (TensoRF) following the work of Chen et al. TensoRF represents a radiance field by matrix-vector and vector-vector combinations of tensors. Compared to MLP based NeRF, it is more efficient while preserving comparable quality without customized CUDA implementation."
+            "TensoRF represents a radiance field by matrix-vector and vector-vector combinations of tensors. Compared to MLP based NeRF, it is more efficient while preserving comparable quality without customized CUDA implementation."
         ],
     },
     {
@@ -110,7 +144,7 @@ export const projects: Project[] = [
         url: "https://github.com/Galaxeaaa/tssss",
         imgUrl: "/images/TSSSS.jpg",
         desc: [
-            "I applied a new, efficient method which performs convolution of radiance map and weight kernel in texture space. By pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, the method significantly reduced time complexity of convolution.",
+            "An efficient method to compute convolution of radiance map and weight kernel in texture space. By pre-calculating weight kernels with Burley's normalized diffusion profile and applying wavelet transformation, the method significantly reduced time complexity of convolution.",
             "Awarded the Outstanding Graduation Thesis of Zhejiang University Undergraduates in 2022.",
         ],
     },
@@ -120,7 +154,7 @@ export const projects: Project[] = [
         url: "https://github.com/Galaxeaaa/ForwardPlus",
         imgUrl: "/images/ForwardPlus.jpg",
         desc: [
-            "I implemented tiled forward rendering and tiled deferred rendering according to existing papers, and optimized light culling pass by using multiple frustum dividing and light-frustum intersection strategies. Afterwards, I conducted experiments to compare the performance of the strategies mentioned above. Finally I transplanted the algorithms aborementioned to android devices.",
+            "An implementation of tiled forward rendering and tiled deferred rendering, with optimized light culling pass by using multiple frustum dividing and light-frustum intersection strategies.",
         ],
     },
     {
@@ -129,8 +163,7 @@ export const projects: Project[] = [
         url: "",
         imgUrl: "/images/CyberCreed.png",
         desc: [
-            "We designed and implemented a 3D computer game resembling Assassin's Creed with Unreal Engine 4.",
-            "Worked in a group of five I mainly focused on scene and level design, enemy animation and behavior design, special effect design based on particle system, etc. And I assisted to complete other modules in the game.",
+            "A 3D computer game resembling Assassin's Creed with Unreal Engine 4.",
         ],
     },
     {
@@ -139,8 +172,7 @@ export const projects: Project[] = [
         url: "https://github.com/Galaxeaaa/MedicalAppointmentSystem-Frontend",
         imgUrl: "/images/HospitalWebsite.jpg",
         desc: [
-            "I led a 20-people team and developed a hospital website based on Vue.js and Java, whose main functions including information viewing, registration appointment, online consultation, video diagnosis, online forum, etc.",
-            "I participated in front-end programming, back-end programming and the design and maintenance of the cloud database.",
+            "A course project implementing a hospital website with Vue.js and Java, whose main functions including information viewing, registration appointment, online consultation, video diagnosis, online forum, etc.",
         ],
     },
     {
@@ -149,27 +181,39 @@ export const projects: Project[] = [
         url: "https://weiranzhou.github.io/project-Petiu",
         imgUrl: "/images/Petiu.jpg",
         desc: [
-            "Worked in a group of three, I designed and developed IOS App \"Petiu\" with SwiftUI.",
-            "We attended China Collegiate Computing Contest -- Mobile Application Innovation Contest held by Apple Inc. and Zhejiang University in 2021, and were awarded Third Prize.",
+            "An IOS App \"Petiu\" written in SwiftUI.",
+            "Awarded Third Prize in the China Collegiate Computing Contest -- Mobile Application Innovation Contest held by Apple Inc. and Zhejiang University in 2021.",
         ],
     },
 ]
 
 export const experiences: Experience[] = [
     {
-        title: "M.S. in Computer Science",
+        title: "Research Assistant",
         type: "education",
-        company: "University of California San Diego, CA, United States",
-        year: "2022 - Present",
+        company: "UC San Diego",
+        location: "CA, United States",
+        time: "Aug 2024 - Now",
         url: "https://ucsd.edu",
         desc: "Contributed to subsurface scattering rendering in our engine.",
         current: true,
     },
     {
+        title: "M.S. in Computer Science",
+        type: "education",
+        company: "UC San Diego",
+        location: "CA, United States",
+        time: "Sep 2022 - June 2024",
+        url: "https://ucsd.edu",
+        desc: "Contributed to subsurface scattering rendering in our engine.",
+        current: false,
+    },
+    {
         title: "Software Engineer Intern",
         type: "company",
-        company: "Electronic Arts, CA, United States",
-        year: "2023",
+        company: "Electronic Arts",
+        location: "CA, United States",
+        time: "June 2023 - Sep 2023",
         url: "https://www.ea.com/",
         desc: "Incoming intern.",
         current: false,
@@ -177,16 +221,18 @@ export const experiences: Experience[] = [
     {
         title: "Rendering Engine Engineer Intern",
         type: "company",
-        company: "RaysEngine, Zhejiang, China",
-        year: "2021 - 2022",
+        company: "RaysEngine",
+        location: "Zhejiang, China",
+        time: "Dec 2021 - Jun 2022",
         url: "https://www.raysengine.com/",
         desc: "Contributed to subsurface scattering rendering in our engine.",
     },
     {
         title: "B.E. in Computer Science and Technology",
         type: "education",
-        company: "Zhejiang University, Zhejiang, China",
-        year: "2018 - 2022",
+        company: "Zhejiang University",
+        location: "Zhejiang, China",
+        time: "Sep 2018 - Jun 2022",
         url: "https://www.zju.edu.cn",
         desc: "Major in Computer Science and Technology with a GPA of 3.9.",
     },

@@ -10,8 +10,9 @@ export default function Experience() {
 					title={exp.title}
 					catagory={exp.type}
 					desc={exp.desc}
-					year={exp.year}
+					time={exp.time}
 					company={exp.company}
+					location={exp.location}
 					companyLink={exp.url}
 					last={idx === experiences.length - 1 ? 1 : 0}
 					current={exp.current}
@@ -21,10 +22,10 @@ export default function Experience() {
 	);
 }
 
-const ExperienceComponent = ({ title, desc, year, company, companyLink, catagory, last, current }) => {
+const ExperienceComponent = ({ title, desc, time, company, location, companyLink, catagory, last, current }) => {
 	return (
 		<div className="flex">
-			<p className="pt-[7px] mr-4 w-32 hidden sm:block text-right text-md text-color-light">{year}</p>
+			<p className="pt-[7px] mr-4 w-44 hidden sm:block text-right text-md text-color-light">{time}</p>
 			<div className="flex flex-col w-10 flex-shrink-0 items-center mr-4">
 				<div>
 					{current === true ?
@@ -48,7 +49,10 @@ const ExperienceComponent = ({ title, desc, year, company, companyLink, catagory
 			</div>
 			<div className="pt-1 pb-8">
 				<p className="text-lg font-bold text-color-plain">{title}</p>
-				<a href={companyLink} className="mb-2 text-color-plain">{company}</a>
+				<p className="mb-2 text-color-plain">
+					<a href={companyLink} >{company}</a>
+					, {location}
+				</p>
 			</div>
 		</div>
 	);

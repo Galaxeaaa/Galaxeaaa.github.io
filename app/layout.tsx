@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat, Source_Sans_3, Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const main_font = Montserrat({ subsets: ["latin"] });
+// const main_font = Inter({ subsets: ["latin"] });
 
 const title = "Cheng Wang";
 const description = "Personal homepage of Cheng Wang.";
@@ -47,7 +48,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={main_font.className}>{children}</body>
         </html>
     );
 }

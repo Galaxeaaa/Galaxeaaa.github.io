@@ -8,13 +8,13 @@ import Experience from "@/components/Experience";
 export default function Home() {
 	return (
 		<PageContainer>
-			<div className="col max-w-6xl mx-auto px-6 md:px-16">
+			<div className="col max-w-6xl mx-auto px-6 font-medium md:px-16">
 				<Hero />
 				<DividingLine title="About Me" id="about" />
 				<About />
-				<DividingLine title="Publications" id="publications" />
+				<DividingLine title="Publications and Preprints" id="publications" />
 				<Publications />
-				<DividingLine title="Selected Projects" id="projects" />
+				<DividingLine title="Projects" id="projects" />
 				<Projects />
 				<DividingLine title="Experience" id="experience" />
 				<Experience />

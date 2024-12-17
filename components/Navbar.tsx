@@ -27,7 +27,7 @@ export default function Navbar() {
 
 function CostomScrollLink({ to, children }) {
 	return (
-		<ScrollLink to={to} spy={true} offset={-200} className="no-underline hidden sm:block">
+		<ScrollLink to={to} spy={true} offset={-70} className="no-underline hidden sm:block">
 			<p className="cursor-pointer text-color-plain hover:text-color-accent-1-dark
 			hover:bg-color-accent-1/20 transition-all ease-in-out px-4 py-2 rounded-lg" >
 				{children}
