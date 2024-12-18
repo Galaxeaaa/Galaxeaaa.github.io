@@ -51,7 +51,7 @@ export default function About() {
 						href="https://drive.google.com/file/d/1O_jdcHgd1_u4p-KMWuS6TaWNmiuWD0Pd/view?usp=sharing"
 
 					>
-						CV
+						Resume
 					</a>
 					.
 				</p>

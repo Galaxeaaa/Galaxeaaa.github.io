@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react";
-import Link from "next/link";
 
 export default function Navbar() {
 	return (
@@ -12,7 +11,7 @@ export default function Navbar() {
 						onClick={() => {
 							window.scrollTo({ top: 0, behavior: "smooth" });
 						}}
-						className="cursor-pointer text-2xl font-bold text-color-accent-1 underline decoration-4 decoration-color-accent-2 mr-4 shrink-0">
+						className="cursor-pointer text-4xl font-bold font-serif bg-gradient-to-r from-color-accent-1-dark to-color-accent-2-dark inline-block text-transparent bg-clip-text mr-4 shrink-0">
 						Cheng Wang
 					</div>
 					<div className="flex-grow"></div>

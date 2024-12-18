@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { userData } from "@/data/data";
 import { CardBody, CardContainer, CardItem } from "@/utils/3DCard";
+import { CycledAppearContainer, CycledAppearItem } from "@/utils/CycledAppear";
+import { BlurIn } from "@/utils/text-animate";
 
 export default function Hero() {
 	return (
@@ -9,6 +11,7 @@ export default function Hero() {
 			{/* “Everything we see hides another thing, we always want to see what is hidden by what we see.” <br />
 			-- Rene Magritte */}
 			<div className="col items-center text-center">
+
 				<CardContainer className="">
 					<CardBody className="relative group/card border-0 w-auto h-auto sm:h-[25rem] px-20 py-6 flex flex-col items-center dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2]">
 						<CardItem
@@ -21,18 +24,38 @@ export default function Hero() {
 							translateZ="100"
 							className="text-3xl font-bold mt-4"
 						>
-							Cheng Wang 王呈
+							<div className="flex items-center space-x-2">
+								<div>Cheng Wang</div>
+								<div className="text-4xl">王呈</div>
+							</div>
 						</CardItem>
 						<CardItem
 							translateZ="60"
 							className="text-lg pt-2 text-color-light"
 						>
-							chengwang@ucsd.edu
+							<CycledAppearContainer interval={3500}>
+								<CycledAppearItem>
+									<BlurIn duration={1}> Researcher </BlurIn>
+								</CycledAppearItem>
+								<CycledAppearItem>
+									<BlurIn duration={1}> Software Engineer </BlurIn>
+								</CycledAppearItem>
+								<CycledAppearItem>
+									<BlurIn duration={1}> Game Developer </BlurIn>
+								</CycledAppearItem>
+								<CycledAppearItem>
+									<BlurIn duration={1}> Badminton Player </BlurIn>
+								</CycledAppearItem>
+							</CycledAppearContainer>
 						</CardItem>
 					</CardBody>
 				</CardContainer>
-				<div className="flex justify-center items-center space-x-2">
-					<a href="mailto:chengwang@ucsd.edu">
+				<div className="flex justify-center items-center space-x-4">
+					<a href="mailto:chengwang@ucsd.edu"> Email </a>
+					<a href="https://github.com/Galaxeaaa"> Github </a>
+					<a href="https://www.linkedin.com/in/chengwang1111"> LinkedIn </a>
+					<a href="https://drive.google.com/file/d/1O_jdcHgd1_u4p-KMWuS6TaWNmiuWD0Pd/view?usp=sharing"> Resume </a>
+					{/* <a href="mailto:chengwang@ucsd.edu">
 						<svg className="transition fill-color-accent-1 hover:fill-color-accent-1-dark" viewBox="0 0 1365 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10694" width="36" height="36"><path d="M684.00064 607.733333L1282.005973 9.728A133.077333 133.077333 0 0 0 1232.00064 0h-1098.666667c-16.938667 0-33.205333 3.2-48.138666 8.93866l598.805333 598.794666z" p-id="10695"></path><path d="M684.00064 728.394667l-664.533333-664.533334A132.48 132.48 0 0 0 0.00064 133.333333v757.333334C0.00064 964.266667 59.733973 1024 133.333973 1024h1098.666667c73.6 0 133.333333-59.733333 133.333333-133.333333v-757.333334a133.013333 133.013333 0 0 0-18.528-67.733333L684.00064 728.394667z" p-id="10696"></path></svg>
 					</a>
 					<a href="https://github.com/Galaxeaaa">
@@ -43,7 +66,7 @@ export default function Hero() {
 					</a>
 					<a href="https://drive.google.com/file/d/1O_jdcHgd1_u4p-KMWuS6TaWNmiuWD0Pd/view?usp=sharing">
 						<svg className="transition fill-color-accent-1 hover:fill-color-accent-1-dark" transform="scale(1.3, 1.3)" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11476" width="40" height="40"><path d="M586.9568 165.888H272.4864c-23.2448 0-42.1888 18.944-42.1888 42.1888v607.8464c0 23.2448 18.944 42.1888 42.1888 42.1888H751.616c23.2448 0 42.1888-18.944 42.1888-42.1888V372.736l-206.848-206.848z m-158.1056 88.1664c37.1712 0 67.2768 30.1056 67.2768 67.2768s-30.1056 67.2768-67.2768 67.2768c-37.1712 0-67.2768-30.1056-67.2768-67.2768s30.0032-67.2768 67.2768-67.2768z m0 145.3056c52.1216 0 94.5152 37.888 94.5152 84.3776 0 11.6736-9.4208 21.0944-21.0944 21.0944-11.6736 0-21.0944-9.4208-21.0944-21.0944 0-22.8352-23.9616-42.1888-52.3264-42.1888s-52.3264 19.3536-52.3264 42.1888c0 11.6736-9.4208 21.0944-21.0944 21.0944s-21.0944-9.4208-21.0944-21.0944c0-46.592 42.3936-84.3776 94.5152-84.3776z m240.9472 344.8832H354.2016c-11.5712 0-21.0944-9.5232-21.0944-21.0944s9.5232-21.0944 21.0944-21.0944H669.696c11.5712 0 21.0944 9.5232 21.0944 21.0944 0.1024 11.5712-9.4208 21.0944-20.992 21.0944z m0-106.8032H354.2016c-11.5712 0-21.0944-9.5232-21.0944-21.0944s9.5232-21.0944 21.0944-21.0944H669.696c11.5712 0 21.0944 9.5232 21.0944 21.0944s-9.4208 21.0944-20.992 21.0944z m-48.128-287.232c-3.8912 0-7.2704-3.3792-7.2704-7.2704v-89.9072l97.1776 97.1776h-89.9072z" p-id="11477"></path><path d="M428.8512 351.744c16.7936 0 30.4128-13.6192 30.4128-30.4128s-13.6192-30.4128-30.4128-30.4128-30.4128 13.6192-30.4128 30.4128 13.6192 30.4128 30.4128 30.4128z" p-id="11478"></path></svg>
-					</a>
+					</a> */}
 				</div>
 			</div>
 			{/* </div> */}

@@ -20,7 +20,10 @@ const config: Config = {
 							DEFAULT: "#6366f1", // indigo-500
 							"dark": "#4338ca", // indigo-700
 						},
-						"2": "#6ee7b7", // emerald-300
+						"2": {
+							DEFAULT: "#6ee7b7", // emerald-300
+							"dark": "#10b981", // emerald-500
+						}
 					},
 				},
 			},
@@ -29,6 +32,10 @@ const config: Config = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
+			fontFamily: {
+				serif: ['var(--font-libertinus-serif)', 'var(--font-zhi-mang-xing)'],
+				sans: ['var(--font-montserrat)', 'var(--font-zhi-mang-xing)'],
+			}
 		},
 	},
 	plugins: [],
