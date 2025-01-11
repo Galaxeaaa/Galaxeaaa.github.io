@@ -4,7 +4,6 @@ import localFont from 'next/font/local'
 import "./globals.css";
 
 const main_font = Montserrat({ subsets: ["latin"], variable: '--font-montserrat' });
-// const main_font = Inter({ subsets: ["latin"] });
 
 const serif_font = localFont({
     src: [

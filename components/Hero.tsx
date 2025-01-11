@@ -16,7 +16,7 @@ export default function Hero() {
 					<CardBody className="relative group/card border-0 w-auto h-auto sm:h-[25rem] px-20 py-6 flex flex-col items-center dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2]">
 						<CardItem
 							translateZ="80"
-							className="overflow-hidden max-w-[7cm] aspect-square mx-auto shadow-lg"
+							className="overflow-hidden max-w-[7cm] aspect-square mx-auto shadow-lg rounded-full"
 						>
 							<img className="-mt-6" src={userData.avatarUrl} alt="avatar" />
 						</CardItem>
