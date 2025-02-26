@@ -18,7 +18,7 @@ export default function Hero() {
 							translateZ="80"
 							className="overflow-hidden max-w-[7cm] aspect-square mx-auto shadow-lg rounded-full"
 						>
-							<img className="-mt-6" src={userData.avatarUrl} alt="avatar" />
+							<img className="-mt-20" src={userData.avatarUrl} alt="avatar" />
 						</CardItem>
 						<CardItem
 							translateZ="100"
