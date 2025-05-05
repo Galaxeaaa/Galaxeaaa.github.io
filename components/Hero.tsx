@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { userData } from "@/data/data";
 import { CardBody, CardContainer, CardItem } from "@/utils/3DCard";
 import { CycledAppearContainer, CycledAppearItem } from "@/utils/CycledAppear";
