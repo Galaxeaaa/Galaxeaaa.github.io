@@ -29,7 +29,6 @@ function DividingLine({ title, id }) {
 		<div className="flex py-14 space-x-4 items-center -px-6" id={id}>
 			{title ?
 				(<>
-					{/* <div className="h-0.5 w-full bg-light"> </div> */}
 					<div className="text-3xl font-bold min-w-fit font-serif bg-gradient-to-r from-accent-1-dark to-accent-2-dark inline-block text-transparent bg-clip-text"> {title} </div>
 					<div className="h-0.5 w-full bg-light"> </div>
 				</>)

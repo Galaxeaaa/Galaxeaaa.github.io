@@ -78,9 +78,7 @@ function TagRegion({ title, tags }) {
 
 function Tag({ str }) {
 	return (
-		<div
-			className="mr-2 mb-2 px-2 py-1 bg-white shadow select-none hover:-translate-y-0.5 hover:scale-105 transition-all border-collapse border-2 border-light rounded-xl"
-		>
+		<div className="mr-2 mb-2 px-2 py-1 bg-white shadow select-none hover:-translate-y-0.5 hover:scale-105 transition-all border-collapse border-2 border-light rounded-xl">
 			{str}
 		</div>
 	)
