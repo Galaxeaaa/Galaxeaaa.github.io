@@ -33,7 +33,6 @@ type Experience = {
     location?: string;
     time: string;
     url: string;
-    desc: string;
     current?: boolean;
 };
 
@@ -53,15 +52,15 @@ export const userData: UserData = {
 
 export const about: About = {
     description: [
-        "Hi! I'm Cheng Wang, currently a M.S. student at University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in neural rendering, novel view synthesis and inverse rendering. I'm driven to make people's lives happier and easier through technology."
+        "Hi! I'm Cheng Wang. I received my Master's degree in Computer Science from University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in inverse problems."
     ],
     skills: [
         "C/C++",
         "Python",
         "PyTorch",
-        // "Rust",
         "OpenGL",
         "Unreal Engine 5",
+        "Rust",
         // "CUDA",
         "TypeScript",
         "Next.js",
@@ -189,14 +188,21 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
     {
+        title: "Computer Vision Research Engineer",
+        type: "company",
+        company: "Dandy",
+        location: "Remote, United States",
+        time: "Apr 2025 - Present",
+        url: "https://www.meetdandy.com/",
+        current: true,
+    },
+    {
         title: "Research Assistant",
         type: "education",
         company: "UC San Diego",
         location: "CA, United States",
-        time: "Aug 2024 - Now",
+        time: "Aug 2024 - Apr 2025",
         url: "https://ucsd.edu",
-        desc: "Contributed to subsurface scattering rendering in our engine.",
-        current: true,
     },
     {
         title: "M.S. in Computer Science",
@@ -205,8 +211,6 @@ export const experiences: Experience[] = [
         location: "CA, United States",
         time: "Sep 2022 - June 2024",
         url: "https://ucsd.edu",
-        desc: "Contributed to subsurface scattering rendering in our engine.",
-        current: false,
     },
     {
         title: "Software Engineer Intern",
@@ -215,8 +219,6 @@ export const experiences: Experience[] = [
         location: "CA, United States",
         time: "June 2023 - Sep 2023",
         url: "https://www.ea.com/",
-        desc: "Incoming intern.",
-        current: false,
     },
     {
         title: "Rendering Engine Engineer Intern",
@@ -225,7 +227,6 @@ export const experiences: Experience[] = [
         location: "Zhejiang, China",
         time: "Dec 2021 - Jun 2022",
         url: "https://www.raysengine.com/",
-        desc: "Contributed to subsurface scattering rendering in our engine.",
     },
     {
         title: "B.E. in Computer Science and Technology",
@@ -234,7 +235,6 @@ export const experiences: Experience[] = [
         location: "Zhejiang, China",
         time: "Sep 2018 - Jun 2022",
         url: "https://www.zju.edu.cn",
-        desc: "Major in Computer Science and Technology with a GPA of 3.9.",
     },
     // {
     //     title: "High School",

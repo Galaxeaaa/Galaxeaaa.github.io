@@ -4,7 +4,7 @@ import BaseCard from "@/utils/BaseCard";
 
 export default function Publications() {
 	return (
-		<div className="flex flex-col items-center space-y-8 text-color-plain">
+		<div className="flex flex-col items-center space-y-8 text-plain">
 			{publications.map((proj, index) => (
 				<PublicationCard
 					key={index}
@@ -26,7 +26,7 @@ export default function Publications() {
 function PublicationCard({ title, authors, myid, year, publisher, desc, project_url, paper_url, code_url }) {
 	return (
 		<BaseCard>
-			<div className="flex flex-col text-color-plain text-left">
+			<div className="flex flex-col text-plain text-left">
 				<div className="font-semibold">{title}</div>
 				<div>
 					{authors.map((author, idx) => (
@@ -37,7 +37,7 @@ function PublicationCard({ title, authors, myid, year, publisher, desc, project_
 					))}
 				</div>
 				<div className="italic">{publisher}</div>
-				<div className="hidden sm:block text-color-light">
+				<div className="hidden sm:block text-light">
 					{desc}
 				</div>
 				<div className="flex space-x-4">

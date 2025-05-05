@@ -11,7 +11,7 @@ export default function Navbar() {
 						onClick={() => {
 							window.scrollTo({ top: 0, behavior: "smooth" });
 						}}
-						className="cursor-pointer text-4xl font-bold font-serif bg-gradient-to-r from-color-accent-1-dark to-color-accent-2-dark inline-block text-transparent bg-clip-text mr-4 shrink-0">
+						className="cursor-pointer text-4xl font-bold font-serif bg-gradient-to-r from-accent-1-dark to-accent-2-dark inline-block text-transparent bg-clip-text mr-4 shrink-0">
 						Cheng Wang
 					</div>
 					<div className="flex-grow"></div>
@@ -38,7 +38,7 @@ function ScrollLink({ to, children }) {
 
 	return (
 		<a href={`#${to}`} onClick={handleClick} className="no-underline hidden sm:block">
-			<p className="cursor-pointer text-color-plain hover:text-color-accent-1-dark hover:bg-color-accent-1/20 transition-all ease-in-out px-4 py-2 rounded-xl">
+			<p className="cursor-pointer text-plain hover:text-accent-1-dark hover:bg-accent-1/20 transition-all ease-in-out px-4 py-2 rounded-xl">
 				{children}
 			</p>
 		</a>
