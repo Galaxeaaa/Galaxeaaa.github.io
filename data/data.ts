@@ -81,9 +81,10 @@ export const publications: Publication[] = [
         authors: ["Zimo Wang*", "Cheng Wang*", "Taiki Yoshino", "Sirui Tao", "Ziyang Fu", "Tzu-Mao Li"],
         myid: 2,
         year: "2024",
-        publisher: "CVPR 2025",
+        publisher: "CVPR 2025 (Highlight)",
         paper_url: "https://arxiv.org/abs/2411.14628",
-        code_url: "Coming",
+        project_url: "https://zeamoxwang.github.io/HotSpot-CVPR25/",
+        code_url: "https://github.com/Galaxeaaa/HotSpot",
         desc: "Neural Signed Distance Field optimization from point clouds with heat method.",
     },
     {
