@@ -5,7 +5,7 @@ import React from "react";
 export default function Navbar() {
 	return (
 		<>
-			<div className="h-20 sticky bg-white/90 backdrop-blur border-b w-full transition-all duration-500 top-0 z-40 overflow-hidden">
+			<div className="h-20 sticky bg-white/90 backdrop-blur w-full transition-all duration-500 top-0 z-40 overflow-hidden shadow-2xl shadow-light/10">
 				<div className="flex items-center justify-start px-10 w-full max-w-6xl mx-auto h-full my-auto">
 					<div
 						onClick={() => {
