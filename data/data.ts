@@ -37,7 +37,6 @@ type Experience = {
 };
 
 type About = {
-    description: string[];
     interests: string[];
     skills: string[];
 };
@@ -51,9 +50,6 @@ export const userData: UserData = {
 };
 
 export const about: About = {
-    description: [
-        "Hi! I'm Cheng Wang. I received my Master's degree in Computer Science from University of California San Diego. Before that, I guaduated from Chu Kochen Honors College of Zhejiang University, majoring in Computer Science and Technology. Through my education, I've taken a huge interest in visual computing, especially in inverse problems."
-    ],
     skills: [
         "C/C++",
         "Python",
