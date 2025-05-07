@@ -65,6 +65,7 @@ export const about: About = {
     interests: [
         "Badminton",
         "Classical Music",
+        "Photography",
         "Video Games",
         "Cooking",
         "Chess",
