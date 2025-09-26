@@ -52,7 +52,7 @@ export default function Hero() {
 					<a href="mailto:chengwang@ucsd.edu"> Email </a>
 					<a href="https://github.com/Galaxeaaa"> Github </a>
 					<a href="https://www.linkedin.com/in/chengwang1111"> LinkedIn </a>
-					<a href="https://drive.google.com/file/d/1O_jdcHgd1_u4p-KMWuS6TaWNmiuWD0Pd/view?usp=sharing"> Resume </a>
+					<a href="https://drive.google.com/file/d/1aG11ZkTvSyfBXDlGJpoqxg-LpHAKgXp1/view?usp=drive_link"> Resume </a>
 				</div>
 			</div>
 		</div >
