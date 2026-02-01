@@ -8,22 +8,22 @@ const main_font = Montserrat({ subsets: ["latin"], variable: '--font-montserrat'
 const serif_font = localFont({
     src: [
         {
-            path: "/fonts/LibertinusSerif-Regular.woff2",
+            path: "./fonts/LibertinusSerif-Regular.woff2",
             style: "normal",
             weight: "400",
         },
         {
-            path: "/fonts/LibertinusSerif-Italic.woff2",
+            path: "./fonts/LibertinusSerif-Italic.woff2",
             style: "italic",
             weight: "400",
         },
         {
-            path: "/fonts/LibertinusSerif-Bold.woff2",
+            path: "./fonts/LibertinusSerif-Bold.woff2",
             style: "normal",
             weight: "900",
         },
         {
-            path: "/fonts/LibertinusSerif-Semibold.woff2",
+            path: "./fonts/LibertinusSerif-Semibold.woff2",
             style: "normal",
             weight: "400",
         }
@@ -32,7 +32,7 @@ const serif_font = localFont({
 })
 
 const chinese_font = localFont({
-    src: "/fonts/ZhiMangXing-Regular.ttf",
+    src: "./fonts/ZhiMangXing-Regular.ttf",
     variable: '--font-zhi-mang-xing',
 })
 
