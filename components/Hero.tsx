@@ -33,6 +33,9 @@ export default function Hero() {
 						>
 							<CycledAppearContainer interval={3500}>
 								<CycledAppearItem>
+									<BlurIn duration={1}> Builder </BlurIn>
+								</CycledAppearItem>
+								<CycledAppearItem>
 									<BlurIn duration={1}> Researcher </BlurIn>
 								</CycledAppearItem>
 								<CycledAppearItem>
@@ -52,7 +55,7 @@ export default function Hero() {
 					<a href="mailto:chengwang@ucsd.edu"> Email </a>
 					<a href="https://github.com/Galaxeaaa"> Github </a>
 					<a href="https://www.linkedin.com/in/chengwang1111"> LinkedIn </a>
-					<a href="https://drive.google.com/file/d/1aG11ZkTvSyfBXDlGJpoqxg-LpHAKgXp1/view?usp=drive_link"> Resume </a>
+					<a href="https://drive.google.com/open?id=17FYINeEu0tcC327UNoj9MMWmNxJ6n1Do&usp=drive_fs"> Resume </a>
 				</div>
 			</div>
 		</div >
