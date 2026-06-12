@@ -12,12 +12,12 @@ export default function Home() {
 				<Hero />
 				<DividingLine title="About Me" id="about" />
 				<About />
+				<DividingLine title="Experience" id="experience" />
+				<Experience />
 				<DividingLine title="Publications and Preprints" id="publications" />
 				<Publications />
 				<DividingLine title="Projects" id="projects" />
 				<Projects />
-				<DividingLine title="Experience" id="experience" />
-				<Experience />
 				<DividingLine title="" id="" />
 			</div>
 		</PageContainer>
